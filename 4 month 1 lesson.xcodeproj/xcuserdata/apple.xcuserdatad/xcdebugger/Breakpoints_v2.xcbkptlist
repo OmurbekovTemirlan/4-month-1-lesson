@@ -3,4 +3,54 @@
    uuid = "9E9120B9-6891-47FC-AC56-6E5478573BE7"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "441D6DFF-2AE0-4C32-A8CF-6F04BDCBAEE3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "4 month 1 lesson/ViewControlers/ThirdViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "441D6DFF-2AE0-4C32-A8CF-6F04BDCBAEE3 - 8a9b3eb982389fce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__month_1_lesson.ThirdViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "4 month 1 lesson"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/4%20month%201%20lesson/4%20month%201%20lesson/ViewControlers/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "2155">
+               </Location>
+               <Location
+                  uuid = "441D6DFF-2AE0-4C32-A8CF-6F04BDCBAEE3 - 8a9b3eb982389fce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__month_1_lesson.ThirdViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "4 month 1 lesson"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/4%20month%201%20lesson/4%20month%201%20lesson/ViewControlers/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "1905">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

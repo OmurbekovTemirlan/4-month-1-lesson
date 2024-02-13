@@ -300,7 +300,11 @@ class SignInViewController: UIViewController {
 
     @objc func thirdTapped(_ sender: UIButton) {
         let vc = ThirdViewController()
-        present(vc, animated: true)
+        vc.laabel = emailTF.text
+        
+        
+        navigationController?.pushViewController(vc, animated: true)
+//        present(vc, animated: true)
     }
    
 }
