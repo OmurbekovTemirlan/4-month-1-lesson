@@ -40,9 +40,7 @@ class MakerView {
                         cornerRadius: CGFloat = 16,
                         backgroundColor: UIColor = .clear,
                         borderColor: CGColor = UIColor.gray.cgColor,
-                        borderWidth: CGFloat = 2,
-                        translatesAutoresizingMaskIntoConstraints: Bool = false
-    ) -> UITextField {
+                        borderWidth: CGFloat = 2 ) -> UITextField {
         
         let tf = UITextField()
         tf.placeholder = placeholder
@@ -54,26 +52,37 @@ class MakerView {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 8, height: 8))
         tf.leftView = view
         tf.leftViewMode = .always
-        tf.translatesAutoresizingMaskIntoConstraints = translatesAutoresizingMaskIntoConstraints
+        tf.translatesAutoresizingMaskIntoConstraints = false
         return tf
     }
     
     
-//    func makerButton() -> UIButton {
-//        let button = UIButton()
-//        button.s
-//    }
-    //private var emailTF: UITextField = {
-    //        let tf = UITextField()
-    //        tf.placeholder = "erp1253@gmail.com"
-    //        tf.layer.borderColor = UIColor.gray.cgColor
-    //        tf.layer.borderWidth = 2
-    //        tf.layer.cornerRadius = 16
-    //        tf.font = Fonts.regular.size(16)
-    //        let view = UIView(frame: CGRect(x: 0, y: 0, width: 8, height: 5))
-    //        tf.leftView = view
-    //        tf.leftViewMode = .always
-    //        tf.translatesAutoresizingMaskIntoConstraints = false
-    //        return tf
-    //    }()
+    func makerButton(
+        title: String = "",
+        for state: UIControl.State = .normal,
+        colorBt: UIColor = .blue,
+        backgroundColorBT: UIColor? = nil,
+        cornerRadiusBt: CGFloat = 16) -> UIButton {
+            let button = UIButton(type: .system)
+            button.setTitle(title, for: state)
+            button.tintColor = colorBt
+            button.backgroundColor = backgroundColorBT
+            button.layer.cornerRadius = cornerRadiusBt
+            button.translatesAutoresizingMaskIntoConstraints = false
+            return button
+            
+        }
+    
+//    private var signInBtn: UIButton = {
+//        let signBtn = UIButton(type: .system)
+//        signBtn.setTitle("Sign In", for: .normal)
+//        signBtn.setTitleColor(.white, for: .normal)
+//        signBtn.backgroundColor = .systemCyan
+//        signBtn.layer.cornerRadius = 15
+//        signBtn.addTarget(nil, action: #selector(signInTapped), for: .touchUpInside)
+//        signBtn.translatesAutoresizingMaskIntoConstraints = false
+//        return signBtn
+//        
+//    }()
+
 }
