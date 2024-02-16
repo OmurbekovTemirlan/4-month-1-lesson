@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187D5ADE2B7E2BC2006DC19A /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D5ADD2B7E2BC2006DC19A /* NewPasswordViewController.swift */; };
 		189C09D12B767C31000D07A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C09D02B767C31000D07A6 /* AppDelegate.swift */; };
 		189C09D32B767C31000D07A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C09D22B767C31000D07A6 /* SceneDelegate.swift */; };
 		189C09DA2B767C49000D07A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189C09D92B767C49000D07A6 /* Assets.xcassets */; };
@@ -15,10 +16,12 @@
 		189C09EA2B777A5A000D07A6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C09E92B777A5A000D07A6 /* Colors.swift */; };
 		189C09ED2B77823C000D07A6 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C09EC2B77823C000D07A6 /* Font.swift */; };
 		189C09F52B7B985C000D07A6 /* SuccesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C09F42B7B985C000D07A6 /* SuccesPage.swift */; };
-		189C09F72B7B9D2D000D07A6 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C09F62B7B9D2D000D07A6 /* ThirdViewController.swift */; };
+		189C09F92B7CD162000D07A6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C09F82B7CD162000D07A6 /* SignUpViewController.swift */; };
+		189C09FB2B7CD279000D07A6 /* MakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C09FA2B7CD279000D07A6 /* MakerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		187D5ADD2B7E2BC2006DC19A /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
 		189C09CD2B767C31000D07A6 /* 4 month 1 lesson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "4 month 1 lesson.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		189C09D02B767C31000D07A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		189C09D22B767C31000D07A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +35,8 @@
 		189C09EF2B7782A6000D07A6 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../../../Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		189C09F02B7782A6000D07A6 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../../../Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		189C09F42B7B985C000D07A6 /* SuccesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesPage.swift; sourceTree = "<group>"; };
-		189C09F62B7B9D2D000D07A6 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		189C09F82B7CD162000D07A6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		189C09FA2B7CD279000D07A6 /* MakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			children = (
 				189C09D02B767C31000D07A6 /* AppDelegate.swift */,
 				189C09D22B767C31000D07A6 /* SceneDelegate.swift */,
+				189C09FA2B7CD279000D07A6 /* MakerView.swift */,
 			);
 			path = AppDelegete;
 			sourceTree = "<group>";
@@ -98,7 +103,8 @@
 			children = (
 				189C09E72B7775E7000D07A6 /* SignInViewController.swift */,
 				189C09F42B7B985C000D07A6 /* SuccesPage.swift */,
-				189C09F62B7B9D2D000D07A6 /* ThirdViewController.swift */,
+				189C09F82B7CD162000D07A6 /* SignUpViewController.swift */,
+				187D5ADD2B7E2BC2006DC19A /* NewPasswordViewController.swift */,
 			);
 			path = ViewControlers;
 			sourceTree = "<group>";
@@ -186,11 +192,13 @@
 			files = (
 				189C09E82B7775E7000D07A6 /* SignInViewController.swift in Sources */,
 				189C09EA2B777A5A000D07A6 /* Colors.swift in Sources */,
+				189C09F92B7CD162000D07A6 /* SignUpViewController.swift in Sources */,
 				189C09ED2B77823C000D07A6 /* Font.swift in Sources */,
-				189C09F72B7B9D2D000D07A6 /* ThirdViewController.swift in Sources */,
+				189C09FB2B7CD279000D07A6 /* MakerView.swift in Sources */,
 				189C09D12B767C31000D07A6 /* AppDelegate.swift in Sources */,
 				189C09F52B7B985C000D07A6 /* SuccesPage.swift in Sources */,
 				189C09D32B767C31000D07A6 /* SceneDelegate.swift in Sources */,
+				187D5ADE2B7E2BC2006DC19A /* NewPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

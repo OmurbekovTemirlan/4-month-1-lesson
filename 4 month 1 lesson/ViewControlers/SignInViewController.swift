@@ -74,7 +74,7 @@ class SignInViewController: UIViewController {
         tf.layer.borderWidth = 2
         tf.layer.cornerRadius = 16
         tf.font = Fonts.regular.size(16)
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 8, height: 5))
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 8, height: 8))
         tf.leftView = view
         tf.leftViewMode = .always
         tf.translatesAutoresizingMaskIntoConstraints = false
@@ -130,7 +130,7 @@ class SignInViewController: UIViewController {
         signBtn.setTitleColor(.white, for: .normal)
         signBtn.backgroundColor = .systemCyan
         signBtn.layer.cornerRadius = 15
-        signBtn.addTarget(nil, action: #selector(SignInTapped), for: .touchUpInside)
+        signBtn.addTarget(nil, action: #selector(signInTapped), for: .touchUpInside)
         signBtn.translatesAutoresizingMaskIntoConstraints = false
         return signBtn
         
@@ -150,7 +150,7 @@ class SignInViewController: UIViewController {
         signBtn.setTitle("Sign UP", for: .normal)
         signBtn.tintColor = .systemCyan
         signBtn.translatesAutoresizingMaskIntoConstraints = false
-        signBtn.addTarget(nil, action: #selector(thirdTapped), for: .touchUpInside)
+        signBtn.addTarget(nil, action: #selector(signUpTapped), for: .touchUpInside)
         return signBtn
     }()
     
@@ -260,7 +260,7 @@ class SignInViewController: UIViewController {
         ])
     }
     
-    @objc func SignInTapped(_ sender: UIButton){
+    @objc func signInTapped(_ sender: UIButton){
         chec()
     }
     
@@ -298,13 +298,10 @@ class SignInViewController: UIViewController {
         }
     }
 
-    @objc func thirdTapped(_ sender: UIButton) {
-        let vc = ThirdViewController()
-        vc.laabel = emailTF.text
-        
-        
+    @objc func signUpTapped(_ sender: UIButton) {
+        let vc = SignUpViewController()
         navigationController?.pushViewController(vc, animated: true)
-//        present(vc, animated: true)
+
     }
    
 }
