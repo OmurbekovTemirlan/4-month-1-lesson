@@ -276,14 +276,14 @@ class SignInViewController: UIViewController {
                         error: "Пароль должно быть больше 6 цифры!!",
                         succes: "Отлично!!")
         
-        if emailTF.text?.count ?? 0 >= 6, passwordTF.text?.count ?? 0 >= 5 {
+        if emailTF.text?.count ?? 0 >= 6, passwordTF.text?.count ?? 0 >= 6 {
             let vc = SuccesPageController()
             navigationController?.pushViewController(vc, animated: true)
         }
     }
     
     private func valueValidateTF(tf: UITextField, label: UILabel, error: String, succes: String) {
-        if tf.text?.count ?? 0 <= 1,
+        if tf.text?.count ?? 0 <= 6,
             tf.text?.count ?? 0 <= 6
             {
             label.text = error

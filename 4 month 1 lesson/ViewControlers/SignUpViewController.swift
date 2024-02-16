@@ -106,6 +106,7 @@ class SignUpViewController: UIViewController {
         bannerUi()
         SignUpButton()
         infoAccount()
+        chec()
     }
    
     
@@ -270,35 +271,59 @@ class SignUpViewController: UIViewController {
         valueValidateTF(
             tf: passwordTf,
             label: passwordLbl,
-            error: "Пароль должеень быть похож!!!",
+            error: "Пароль должеень быть больше 6!!!",
             succes: "Отлично!!!")
         
         valueValidateTF(
             tf: confirmPasswordTf,
             label: confirmPasswordLbl,
-            error: "Пароль должеень быть похож",
+            error: "Пароль должеень быть больше 6!!!",
             succes: "Отлично!!!")
         
-        if nameTextFeild.text?.count ?? 0 >= 3,
-           emailTf.text?.count ?? 0 >= 7,
-           userNameTf.text?.count ?? 0 >= 5,
-           passwordTf.text?.count == confirmPasswordTf.text?.count   {
-            
+        valuePasswordsTf(
+            tf: passwordTf,
+            label: passwordLbl,
+            error: "Пароль должеень быть похожим!!!",
+            succes: "Отлично!!!")
+        
+        valuePasswordsTf(
+            tf: confirmPasswordTf,
+            label: confirmPasswordLbl,
+            error: "Пароль должеень быть похожим!!!",
+            succes: "Отлично!!!")
+        
+        if nameTextFeild.text?.count ?? 0 >= 6,
+           emailTf.text?.count ?? 0 >= 6,
+           userNameTf.text?.count ?? 0 >= 6,
+           passwordTf.text?.count ?? 0 >= 6,
+           confirmPasswordTf.text?.count ?? 0 >= 6,
+           passwordTf.text == confirmPasswordTf.text {
+                
             let vc = NewPasswordViewController()
             vc.username = userNameTf.text
             vc.Number = numberTf.text
             navigationController?.pushViewController(vc, animated: true)
-            
         }
+       
+
             
         
     }
     private func valueValidateTF(tf: UITextField, label: UILabel, error: String, succes: String) {
-        if tf.text?.count ?? 0 <= 5,
-//           tf.text?.count ?? 0 <= 7,
-//           tf.text?.count ?? 0 <= 5,
-//           tf.text?.count ?? 0 <= 6,
-           tf.text == tf.text {
+        if tf.text?.count ?? 0 <= 6 {
+            label.text = error
+            label.textColor = .red
+            tf.layer.borderWidth = 1
+            tf.layer.borderColor = UIColor.red.cgColor
+        }else{
+            label.text = succes
+            label.textColor = .green
+            tf.layer.borderWidth = 1
+            tf.layer.borderColor = UIColor.green.cgColor
+        }
+    }
+    private func valuePasswordsTf(tf: UITextField, label: UILabel, error: String, succes: String) {
+        if tf.text == tf.text {
             label.text = error
             label.textColor = .red
             tf.layer.borderWidth = 1
@@ -311,3 +336,8 @@ class SignUpViewController: UIViewController {
         }
     }
 }
+
+//           tf.text?.count ?? 0 <= 7,
+//           tf.text?.count ?? 0 <= 5,
+//           tf.text?.count ?? 0 <= 6,
+//           tf.text == tf.text
